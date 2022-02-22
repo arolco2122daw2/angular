@@ -1,0 +1,19 @@
+<h1>Series</h1>
+
+<div class="d-flex align-items-stretch justify-content-center flex-wrap">
+    <div @fade2 class="card" style="width: 30rem;" *ngFor="let card of shonen">
+                <div class="contenido">
+                    <img src="{{card.imagen}}" class="card-img-top" alt="...">
+
+                    <h5 class="card-title">{{card.nombre}} </h5>
+                    <p class="card-text"><b>Autor:</b> {{card.autor}}</p>
+                    <p class="card-text"><b>Genere:</b> {{card.genere}}</p>
+                    <p class="card-text"><b>Episodis:</b> {{card.episodis}}</p>
+                    <p class="card-text"><b>Valoració:</b> {{card.valoracio}}</p>
+                    <p class="card-text"><b>Descripció:</b> {{card.descripcio}}</p>
+                </div>
+                <br>
+                <button type="button" class="btn btn-warning"><a href="{{card.url}}"><button type="button" class="btn btn-warning"></button>Trailer</a></button>
+
+    </div>
+</div>
